@@ -23,6 +23,9 @@ btn2.onmouseover=function(){
    btn.style="display: block;position: absolute;left: 20%;"
 
 }
+function pad(n) {
+  return n < 10 ? '0' + n : n;
+}
 let ask=document.getElementById("ask");
 let answer=document.getElementById("answer");
 const today = new Date();
@@ -32,7 +35,7 @@ const nextSaturday = new Date(today);
 nextSaturday.setDate(today.getDate() + daysUntilSaturday);
 btn2.onclick=function(){
     let will= document.createElement("h2");
-    will.innerText=`yay, see you on the ${nextSaturday}`;
+    will.innerText = `yay, see you on the ${pad(nextSaturday.getDate())}-${pad(nextSaturday.getMonth() + 1)}-${nextSaturday.getFullYear()}`;
     ask.style.display="none";
     answer.appendChild(will);
 
