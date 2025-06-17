@@ -25,10 +25,14 @@ btn2.onmouseover=function(){
 }
 let ask=document.getElementById("ask");
 let answer=document.getElementById("answer");
-
+const today = new Date();
+const dayOfWeek = today.getDay(); // 0 = Sunday, 6 = Saturday
+const daysUntilSaturday = (6 - dayOfWeek + 7) % 7 || 7; // days until next Saturday (if today is Saturday, next Saturday is in 7 days)
+const nextSaturday = new Date(today);
+nextSaturday.setDate(today.getDate() + daysUntilSaturday);
 btn2.onclick=function(){
     let will= document.createElement("h2");
-    will.innerText="yay, see you on the 24th";
+    will.innerText=`yay, see you on the ${nextSaturday}`;
     ask.style.display="none";
     answer.appendChild(will);
 
