@@ -1,59 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>task 133</title>
+    <link href="index.css" rel="stylesheet" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous">
-</head>
-<style>
-    *{
-    font-family: "Berlin Sans FB";
-    text-transform: capitalize;
-}
-    #cute{
-        position: relative;
-        left: 40%;
-        top:50px;
-    
-    }
-    .btn{
-        background-color: palevioletred;
-        color: white;
-        width: 130px;
-    }
-    .btn:hover{
-        background-color: rgba(216, 112, 147, 0.668);
-    }
-    #yes{
-        position: relative;
-        right:30%;
-        top:185.5px;
-    }
-    #ask,#answer{
-        color: rgb(194, 4, 115);
-        text-align: center;
-        margin-top: 40px;
-    }
-</style>
-<body>
-    <h3 id="ask">
-        will you go out with me ?
-    </h3>
-    <h3 id="answer">
-       
-    </h3>
-    <div id="cute"> 
-        <img src="cute.gif"  style="margin-bottom: 100px;" alt="">
-        <button id="yes" class="btn rounded-pill">Yes</button>
-        <button id="no" class="btn rounded-pill" style="display: block;position: absolute;left: 20%;">No</button>
-        
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+
+    <h3 id="ask">will you go out with me ?</h3>
+    <h3 id="answer"></h3>
+    <img src="cute.gif" alt="gif image" />
+    <div id="cute">
+      <button id="yes" type="button" class="btn rounded-pill">Yes</button>
+      <button type="button" id="no" class="btn rounded-pill">No</button>
     </div>
-    
+
     <script src="task.js"></script>
-</body>
+  </body>
 </html>

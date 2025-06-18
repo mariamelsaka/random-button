@@ -1,0 +1,59 @@
+ * {
+     font-family: "Berlin Sans FB";
+     text-transform: capitalize;
+ }
+
+ #ask, #answer {
+     color: rgb(194, 4, 115);
+     text-align: center;
+     margin-top: 40px;
+ }
+
+ img {
+     margin: 2em 0px 0px 30em;
+ }
+
+ #cute {
+     display: flex;
+     flex-direction: row;
+     gap: 10em;
+     margin: 5em 0px 0px 25em;
+ }
+
+ #yes, #no {
+     background-color: palevioletred;
+     color: white;
+     width: 130px;
+ }
+
+ #yes:hover, #no:hover {
+     background-color: rgba(216, 112, 147, 0.668);
+ }
+#yes{
+position: relative;
+}
+#no{
+display: block;
+/* position: absolute; */
+}
+ @media (max-width: 767px) {
+     html, body {
+         margin:8em 0 0 0;
+         padding: 0;
+         width: 100%;
+         height: 100%;
+         overflow-x: hidden;
+     }
+
+     img {
+         margin: 4em 0px 0px 4.3em;
+     }
+
+
+     #cute {
+         display: flex;
+         flex-direction: row;
+         gap: 2em;
+         margin: 5em 0px 0px 3em;
+     }
+ }
